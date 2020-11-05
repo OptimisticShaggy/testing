@@ -8,52 +8,155 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Javascript Events</title>
+    <title>Products</title>
   </head>
-  <body style="background: url(https://images.unsplash.com/photo-1444824775686-4185f172c44b?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover">
-    <div class="container-fluid" style="opacity: 0.8;">
-      <div class="row  justify-content-center">
-        <div class="col-auto">
-          <section id="loaded" class="card m-3 text-center">
-            <div class="card-header bg-dark text-light">
-              <h2>Making Music!</h2>
-            </div>
-            <div class="card-body justify-content-center">
-              <button type="button" class="btn btn-dark" id="clapping">
-                clap.wav
-              </button>
-              <button type="button" class="btn btn-dark" id="kicking">
-                kick.wav
-              </button>
-              <button type="button" class="btn btn-dark" id="snareing">
-                snare.wav
-              </button>
-            </div>
-          </section>
+  <body style="background: url(https://images.unsplash.com/uploads/1413222992504f1b734a6/1928e537?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover">
+    
+        <!--
+        Online store for being a middle man for Electronics through ADAFruit, include these Elements:
+        Navigation Bar
+        Main, Article, Header and Footer for each product
+        figure and figcaption for the photos
+        Aside element for Discount and Nav element for related products
+
+        Using the same idea with cards, have these be included within the <main> content. 
+        -->
+
+    <main class="container" style="opacity: 0.8;">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <header class="navbar-brand">
+          Unreal Technologies
+        </header>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navBar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-dark btn btn-light mx-2" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark btn btn-light mx-2" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark btn btn-light mx-2" href="#">Pricing</a>
+            </li>
+          </ul>
         </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-auto">
-          <footer class="card m-3">
-            <div class="card-body bg-dark text-light">
-              <h3>Credits:</h3>
-              <ul class="list-group">
-                <li class="list-group-item text-dark">Background Photo: Credit due to <a href="https://unsplash.com/photos/JiSNvVs3keU">Dan Stark from Unknown</a></li>
-                <li class="list-group-item text-dark">Shattering Chandelier sound comes from <a href="https://freesound.org/people/matt_ratz/sounds/541601/">Matt_ratz from Unknown</a></li>
-                <li class="list-group-item text-dark">Door Knock sound comes from <a href="https://freesound.org/people/Truss88/sounds/541594/">Truss88 from Unknown</a></li>
+      </nav>
+      <article class="row mt-5 text-center justify-content-center">
+        <section class="row card m-3">
+          <div class="card-header bg-dark text-light">
+            <h2>Home Cloud 900</h2>
+          </div>
+          <div class="card-body">
+            <figure class="figure">
+              <img src="https://cdn.hardkernel.com/wp-content/uploads/2020/10/ODROID-HC4-LED-1024-800x530.png" class="img-thumbnail" alt="Hotswappable dual Harddrives" width="300" height="300">
+              <figcaption class="figure-caption"><span class="text-danger">Price: $145</span> - Hotswappable Harddrive Computer - 500 In Stock</figcaption>
+            </figure>
+            <p>This computer can handle two Harddrives that are Hotswappable. Even the chance make this computer a NAS (Network Attached Storage).</p>
+            <p>To order directly from supplier when we have none in stock, please <a href="#">click here</a></p>
+          </div>
+          <div class="card-footer bg-dark text-light">
+            <ul class="nav nav-fill">
+              <li class="nav-item">
+                <a class="nav-link " href="#">Clavineer 500</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">The Shromba</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Lava Drive</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Quantum Server</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <div class="row">
+          <section class="col-8 card m-3">
+            <div class="card-header bg-dark text-light">
+              <h2>Mini Macro</h2>
+            </div>
+            <div class="card-body">
+              <figure class="figure">
+                <img src="https://cdn.hardkernel.com/wp-content/uploads/2020/07/odroidn2plusA.jpg" class="img-thumbnail" alt="Superpowered Mini Computer" width="300" height="300">
+                <figcaption class="figure-caption"><span class="text-danger">Price: $95</span> - Superpowered Mini Computer - 20 in Stock</figcaption>
+              </figure>
+              <p>This computer is a mini supercomputer. Allows you to edit photos, watch three Youtube videos, and stream your screen to all of your friends. Could even make this computer mine crypto currency while sleeping.</p>
+              <p>To order directly from supplier when we have none in stock, please <a href="#">click here</a></p>
+            </div>
+            <div class="card-footer bg-dark text-light">
+              <ul class="nav nav-fill">
+                <li class="nav-item">
+                  <a class="nav-link " href="#">The Shromba</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Portie 2000</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Doggo 9000</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#">Shroomer</a>
+                </li>
               </ul>
             </div>
-          </footer>
+          </section>
+          <aside class="col card m-3">
+            <div class="card-header bg-dark text-light">
+              <h2>Special Deal!</h2>
+            </div>
+            <div class="card-body">
+              <p class="font-weight-bold">Buy one Mini Macro, GET ONE FREE!!!</p>
+              <p>Currently in Unreal Technologies, we are expected to experience a mass production of Mini Macros and we are currently offering a limited time deal! Don't pass up, deal expires soon!</p>
+            </div>
+          </aside>
         </div>
-      </div>
-    </div>
-    <div class="d-none">
-      <audio id="clap"><source src="audio/clap.wav" type="audio/wav">Your browser does not support the audio element.</audio>
-      <audio id="kick"><source src="audio/kick.wav" type="audio/wav">Your browser does not support the audio element.</audio>
-      <audio id="thesnare"><source src="audio/snare.wav" type="audio/wav">Your browser does not support the audio element.</audio>
-      <audio id="doorknock"><source src="audio/door_knock.mp3" type="audio/mp3">Your browser does not support the audio element.</audio>
-    </div>
-    <script src="js/event.js"></script>
+        <section class="card row mb-3">
+          <div class="card-header bg-dark text-light">
+            <h2>Portie 2000</h2>
+          </div>
+          <div class="card-body justify-content-center">
+            <figure class="figure">
+              <img src="https://cdn.hardkernel.com/wp-content/uploads/2020/05/GOAbeBlackFa-510x250.jpg" class="img-thumbnail" alt="Portable Gaming Computer" width="300" height="300">
+              <figcaption class="figure-caption"><span class="text-danger">Price: $200</span> - Portable Gaming Computer - None In Stock</figcaption>
+            </figure>
+            <p>The Portie 2000 can handle graphics beyond your imagination. Even has hardware that can support VR once the software is programmed.</p>
+            <p>To order directly from supplier when we have none in stock, please <a href="#">click here</a></p>
+          </div>
+          <div class="card-footer bg-dark text-light">
+            <ul class="nav nav-fill">
+              <li class="nav-item">
+                <a class="nav-link " href="#">Clavineer 500</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">The Shromba</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Lava Drive</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Quantum Server</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+      <footer class="row mb-5">
+        <div class="col text-center text-light">
+          <div class="card">
+            <div class="card-header bg-dark">
+              <h3>Credits:</h3>
+            </div>
+              <ul class="card-body list-inline">
+                <li class="list-inline-item text-dark m-auto">Background Photo: Credit due to <a href="https://unsplash.com/photos/71CjSSB83Wo">Pavan Trikutam from Unknown</a></li>
+              </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
